@@ -27,8 +27,6 @@ const VideoDetail = () => {
     statistics: { viewCount, likeCount },
   } = videoDetails;
 
-  console.log(videoDetails);
-
   return (
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>

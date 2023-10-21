@@ -15,11 +15,10 @@ const VideoCard = ({
     snippet,
   },
 }) => {
-  console.log(snippet);
   return (
     <Card
       sx={{
-        width: { xs: "100%", sm: "358px", md: "320px" },
+        width: { xs: "100%", sm: "358px", md: "295px" },
         boxShadow: "none",
         borderRadius: 0,
       }}
@@ -37,7 +36,7 @@ const VideoCard = ({
             height: 180,
           }}
         />
-        <CardContent sx={{ backgroundColor: "#1e1e1e", height: "160px" }}>
+        <CardContent sx={{ backgroundColor: "#1e1e1e", height: "130px" }}>
           <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <Typography variant="subtitle1" fontWeight="bold" color="#fff">
               {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
